@@ -1,1 +1,1 @@
-web: python main.py
+Worker: python main.py app.listen(process.env.PORT || 5000)

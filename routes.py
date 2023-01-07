@@ -5,4 +5,6 @@ bot.run_discord_bot()
 
 @app.route("/")
 def index():
+    bot.run_discord_bot()
+
     pass

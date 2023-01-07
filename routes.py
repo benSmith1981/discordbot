@@ -1,10 +1,9 @@
 import bot
 import flask
-from flask import app
+from flask import (app, render_template)
 bot.run_discord_bot()
 
 @app.route("/")
 def index():
     bot.run_discord_bot()
-
-    pass
+    return render_template("base.html")

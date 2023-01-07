@@ -8,7 +8,7 @@ config = dotenv_values(".env")
 async def handle_response(message) -> str:
     p_message = message.lower()
     # Load your API key from an environment variable or secret management service
-    openai.api_key = config["OPENAIAPIKEY"]
+    openai.api_key = os.environ.get("OPENAIAPIKEY")#config["OPENAIAPIKEY"]
 
 
     if p_message.startswith('Hello'):

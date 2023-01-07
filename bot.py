@@ -16,7 +16,7 @@ async def send_message(message, user_message, is_private):
 
 
 def run_discord_bot():
-    TOKEN = config["DISCORDTOKEN"]
+    TOKEN = os.environ.get("DISCORDTOKEN")#config["DISCORDTOKEN"]
     intents = discord.Intents.default()
     intents.message_content = True 
     intents.messages = True 

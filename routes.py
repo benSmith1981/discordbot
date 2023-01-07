@@ -4,4 +4,4 @@ from flask import app
 
 @app.route("/")
 def index():
-    pass
+    bot.run_discord_bot()
